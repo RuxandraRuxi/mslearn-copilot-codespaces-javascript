@@ -122,4 +122,21 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: float 3s ease-in-out infinite;
+}
+
+img.socialIcon:hover {
+  transform: scale(1.4) rotate(15deg);
+  filter: drop-shadow(0 0 8px rgba(78, 86, 126, 0.6));
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
